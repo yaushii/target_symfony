@@ -1,14 +1,21 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Projet Target{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-</div>
+    <head>
+        <link href="{{ asset('css/basique.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('css/index.css') }}" rel="stylesheet"/>
+    </head>
+    <div class="logo-container"> 
+        <img class="logo" src="{{ asset('images/logo.png') }}" alt="logo!"/>
+    </div>
+    <div class="btn-container">
+        <a href="/create/session" class="bouton"> <div class="items-container"> <p> Nouvelle Session </p><img class="fleche" src="{{ asset('images/fleche.png') }}" alt="logo!"/></div></a>
+       <a href="/" class="bouton"> <div class="items-container">  <p>Historique </p><img class="fleche" src="{{ asset('images/fleche.png') }}" alt="logo!"/></div></a>
+       <a href="/" class="bouton"> <div class="items-container"> <p>Statistiques</p> <img class="fleche" src="{{ asset('images/fleche.png') }}" alt="logo!"/> </div></a>
+
+    </div>
+
 {% endblock %}

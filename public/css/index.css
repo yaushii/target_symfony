@@ -1,0 +1,38 @@
+.logo-container{
+width: 100%;
+display: flex;
+justify-content: center;
+margin-top: 29px;
+}
+
+.logo{
+    width: 80%;
+}
+.btn-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.items-container{
+background-color: #6F6F6F ;
+color: #FFFFFF;
+border-radius: 45px;
+width: 100%;
+height: 90px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+.fleche{
+    width: 15%;
+}
+
+.bouton{
+    width: 50%;
+    height: 90px;
+    margin-top: 35px;
+}
+

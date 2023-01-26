@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Projet Target{% endblock %}
+
+{% block body %}
+    <head>
+        <link href="{{ asset('css/basique.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('css/session.css') }}" rel="stylesheet"/>
+    </head>
+
+
+     <div class="nav"> 
+        <div class="nav-container"> 
+            <a href="/" ><img href="/" class="fleche" src="{{ asset('images/flecheinverse.png') }}" alt="logo!"/></a>
+            <p> Nouvelle Session </p>
+        </div>
+    </div>
+
+
+    <div class="session-container">
+
+    <p class="tir">Distance de tir (M) :</p>
+        <div class="distance">
+            <div class="M"><p>10</p></div>
+            <div class="M"><p>25</p></div>
+            <div class="M"><p>50</p></div>
+
+        </div>
+
+        <p class="tir">Type de cible (14x14) :</p>
+        <div class="type">
+            <img class="cible" src="{{ asset('images/cible_14x14_6_small.png') }}" alt="logo!"/>
+            <img class="cible" src="{{ asset('images/cible_14x14_10a_small.png') }}" alt="logo!"/>
+            <img class="cible" src="{{ asset('images/cible_14x14_10b_small.png') }}" alt="logo!"/>
+            <img class="cible" src="{{ asset('images/cible_14x14_10c_small.png') }}" alt="logo!"/>
+        </div>
+
+        <div class="nbr">
+
+        <p class="tir">Nombre de tirs :</p>
+            <img class="plomb" src="{{ asset('images/plomb.png') }}" alt="logo!"/>
+            <img class="plomb" src="{{ asset('images/plomb.png') }}" alt="logo!"/>
+            <img class="plomb" src="{{ asset('images/plomb.png') }}" alt="logo!"/>
+            <img class="plomb" src="{{ asset('images/plomb.png') }}" alt="logo!"/>
+            <img class="plomb" src="{{ asset('images/plomb.png') }}" alt="logo!"/>
+            <img class="plomb" src="{{ asset('images/plomb.png') }}" alt="logo!"/>
+            <img class="plomb" src="{{ asset('images/plomb.png') }}" alt="logo!"/>
+            <img class="plomb" src="{{ asset('images/plomb.png') }}" alt="logo!"/>
+            <img class="plomb" src="{{ asset('images/plomb.png') }}" alt="logo!"/>
+            <img class="plomb" src="{{ asset('images/plomb.png') }}" alt="logo!"/>
+
+        </div>
+
+        <div class="btn"> 
+            <input class="btn-btn" type="button" value="Démarrer">
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+{% endblock %}
