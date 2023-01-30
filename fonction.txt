@@ -1,0 +1,54 @@
+function findCenterOfImage(image) {
+  let centerX = image.width / 2;
+  let centerY = image.height / 2;
+  return {x: centerX, y: centerY};
+}
+
+Cette fonction prend en entrée une image (
+qui doit être un objet Image en JavaScript) et retourne un objet 
+contenant les coordonnées du centre de l'image (x pour l'abscisse et 
+y pour l'ordonnée). Les coordonnées sont calculées en divisant la largeur de 
+l'image par deux pour obtenir l'abscisse du centre, et en divisant
+la hauteur de l'image par deux pour obtenir l'ordonnée du centre.
+
+
+
+
+
+
+
+<?php
+
+// Charger l'image de la cible
+$targetImage = imagecreatefrompng('target.png');
+
+// Définir les coordonnées des points
+$points = [
+  [100, 200],
+  [200, 300],
+  [300, 400],
+];
+
+// Boucle sur les points et les dessiner sur l'image de la cible
+foreach ($points as $point) {
+  $x = $point[0];
+  $y = $point[1];
+  
+  // Dessiner un cercle rouge autour du point
+  imagefilledellipse($targetImage, $x, $y, 10, 10, imagecolorallocate($targetImage, 255, 0, 0));
+}
+
+// Enregistrer l'image de la cible avec les points
+imagepng($targetImage, 'target_with_points.png');
+
+// Libérer la mémoire associée à l'image
+imagedestroy($targetImage);
+
+?>
+
+Ce code utilise la fonction imagecreatefrompng pour charger l'image de la cible, définit un tableau 
+$points qui contient les coordonnées des points à dessiner, puis boucle 
+sur les points en utilisant la fonction imagefilledellipse 
+pour dessiner un cercle rouge autour de chaque point. L'image de la cible avec les points est ensuite enregistrée en 
+utilisant la fonction imagepng, et la mémoire 
+associée à l'image est libérée à l'aide de la fonction imagedestroy.

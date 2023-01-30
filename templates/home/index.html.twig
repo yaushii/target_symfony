@@ -1,6 +1,5 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Projet Target{% endblock %}
 
 {% block body %}
 
@@ -13,8 +12,8 @@
     </div>
     <div class="btn-container">
         <a href="/create/session" class="bouton"> <div class="items-container"> <p> Nouvelle Session </p><img class="fleche" src="{{ asset('images/fleche.png') }}" alt="logo!"/></div></a>
-       <a href="/" class="bouton"> <div class="items-container">  <p>Historique </p><img class="fleche" src="{{ asset('images/fleche.png') }}" alt="logo!"/></div></a>
-       <a href="/" class="bouton"> <div class="items-container"> <p>Statistiques</p> <img class="fleche" src="{{ asset('images/fleche.png') }}" alt="logo!"/> </div></a>
+       <a href="/historique" class="bouton"> <div class="items-container">  <p>Historique </p><img class="fleche" src="{{ asset('images/fleche.png') }}" alt="logo!"/></div></a>
+       <a href="/statistique" class="bouton"> <div class="items-container"> <p>Statistiques</p> <img class="fleche" src="{{ asset('images/fleche.png') }}" alt="logo!"/> </div></a>
 
     </div>
 
