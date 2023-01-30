@@ -15,13 +15,13 @@ p{
     width: 10%;
 }
 .fleche{
-    width: 31px;
-    height: 25px;
-    margin-left: 8px;
+    width: 50%;
+    margin-left: 5%;
+    
 }
 .distance{
     display: flex;
-    width: 100%;
+    width: 60%;
     justify-content: space-around;
 }
 .tir{
@@ -36,14 +36,14 @@ margin: 1%;
     font-size: 32px;
 }
 .type{
-    width: 100%;
+    width: 60%;
 }
 .cible{
 width: 23%;
 
 }
 .nbr{
-    width: 100%;
+    width: 60%;
 }
 
 .plomb{
@@ -53,11 +53,12 @@ width: 23%;
 .btn{
 display: flex;
 justify-content: center;
-width: 100%;
+width: 60%;
 
 }
 .btn-btn{
    padding: 2%;
+   margin-top: 2%;
    background-color:#5B5B5B ;
    color: #D9D9D9 ;
 }
