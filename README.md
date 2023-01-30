@@ -1,6 +1,6 @@
 "# target_symfony" 
 
-![Logo](public/imges/logo.png)
+![Logo](public/images/logo.png)
 
 
 # Projet target
